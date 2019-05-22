@@ -1,0 +1,268 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, sans-serif;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+	text-align: center;
+	box-sizing: border-box;
+	min-width: 220px;
+}
+
+
+/* Header */
+
+header {
+	z-index: 10;
+	background-color: black;
+	height: 69px;
+	border-bottom: 1px solid seashell;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header img {
+	height: 46px;
+	margin-left: 20px;
+}
+header div {
+	margin-right: 20px;
+}
+#dropdown-btn {
+	display: none;
+}
+#dropdown-content {
+	display: none;
+}
+header li {
+	display: inline-block;
+	margin-left: 30px;
+}
+a {
+	color: seashell;
+	text-decoration: none;
+}
+
+
+/* Banner */
+
+.banner {
+	display: flex;
+	align-items: center;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	height: calc(100vh - 70px);
+	width: 90%;
+	background: url(img-mission-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.mission {
+	background-color: black;
+	width: 100%;
+}
+
+
+/* Main */
+
+.main {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+.main .image-blocks {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.main .image-block {
+	margin: 0 15px;
+}
+.main img {
+	height: 200px;
+	width: 300px;
+}
+.main p {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+#featured-tea {
+	padding-top: 80px;
+	margin-top: -80px;
+}
+
+
+/* Locations */
+
+.locations {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	height: auto;
+	min-height: 500px;
+	width: 90%;
+	background: url(img-locations-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#locations-h2 {
+	padding-top: 80px;
+	margin-bottom: 10px;
+}
+.locations-divs {
+	display: inline-flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.locations-div {
+	width: 300px;
+	background-color: black;
+	margin: 15px 20px;
+	opacity: 1;
+}
+.locations-div p {
+	font-size: 0.8em;
+}
+
+
+/* Contact */
+
+.contact {
+	margin-top: 20px;
+	height: 200px;
+}
+
+
+/* Footer */
+
+footer {
+	text-align: left;
+	padding-left: 20px;
+}
+
+
+@media only screen and (max-width: 810px) {
+	.main img {
+		height: 270px;
+		width: 400px;
+	}
+	footer {
+		text-align: center;
+		padding-left: 0;
+	}
+	.locations, .main {
+		margin-top: 60px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.banner {
+		width: 100%;
+	}
+	.locations {
+		width: 100%;
+	}
+	#nav-ul {
+		display: none;
+	}
+
+	#dropdown-btn {
+		display: block;
+		height: 69px;
+		background-color: black;
+		border: none;
+		cursor: pointer;
+		width: 70px;
+	}
+	#dropdown-btn:hover {
+		background-color: #0e0e0e;
+	}
+
+	#dropdown-content {
+		display: none;
+		position: fixed;
+		top: 69px;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid seashell;
+	}
+	#dropdown-content li {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		background-color: black;
+	}
+	#dropdown-content li:hover {
+		background-color: seashell;
+		color: black;
+	}
+
+	.dropdown-icon {
+		width: 35px;
+		height: 5px;
+		background-color: seashell;
+		margin: 6px auto;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.main {
+		width: 100%;
+	}
+	.main img {
+		width: 95%;
+		height: auto;
+	}
+	.locations-div {
+		width: 200px;
+		margin: 10px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	header {
+		justify-content: center;
+		height: 50px;
+	}
+	#nav {
+		margin: 0;
+	}
+	#dropdown-btn {
+		height: 100%;
+	}
+	#dropdown-content {
+		top: 50px;
+	}
+	header img {
+		display: none;
+	}
+
+	.banner {
+		height: calc(100vh - 50px);
+		margin-top: 50px;
+	}
+
+	.mission h4 {
+		font-size: 0.8em;
+	}
+	.main .image-block {
+		margin: 0;
+	}
+	.main img {
+		width: 95%;
+		height: auto;
+	}
+}

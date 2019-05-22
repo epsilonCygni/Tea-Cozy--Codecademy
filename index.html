@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tea Cozy</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>	
+
+<body>
+
+<!-- Header -->
+	
+	<header>
+		<a href="#"><img src="img-tea-cozy-logo.png" alt="Logo Tea Cozy"></a>
+
+		<div id="nav">
+			<ul id="nav-ul">
+				<a href="#mission"><li>Mission</li></a>
+				<a href="#featured-tea"><li>Featured Tea</li></a>
+				<a href="#locations"><li>Locations</li></a>
+			</ul>
+
+			<!-- for media query (max-width: 650px) -->
+			<button id="dropdown-btn" onclick="dropDown()">
+				<div class="dropdown-icon"></div>
+				<div class="dropdown-icon"></div>
+				<div class="dropdown-icon"></div>
+			</button>
+			<ul id="dropdown-content">
+				<a href="#mission" onclick="dropDown()"><li>Mission</li></a>
+				<a href="#featured-tea" onclick="dropDown()"><li>Featured Tea</li></a>
+				<a href="#locations" onclick="dropDown()"><li>Locations</li></a>
+			</ul>
+		</div>
+	</header>
+
+<!-- Banner -->
+
+	<div id="mission" class="banner">
+		<div class="mission">
+			<h2>Our Mission</h2>
+			<h4>Handpicked, Artisanally Curated, Free Range, Sustinable, Small Batch, Fair Trade, Organic Tea</h4>
+		</div>
+	</div>
+
+<!-- Main -->
+
+	<div class="main">
+		<h2 id="featured-tea">Tea of the Month</h2>
+		<h4>What's Steeping at The Tea Cozy?</h4>
+
+		<div class="image-blocks">
+			<div class="image-block">
+				<img src="img-berryblitz.jpg">
+				<p>Fall Berry Blitz Tea</p>
+			</div>
+			<div class="image-block">
+				<img src="img-spiced-rum.jpg">
+				<p>Spiced Rum Tea</p>
+			</div>
+			<div class="image-block">
+				<img src="img-donut.jpg">
+				<p>Seasonal Donut</p>
+			</div>
+			<div class="image-block">
+				<img src="img-myrtle-ave.jpg">
+				<p>Myrtle Ave Tea</p>
+			</div>
+			<div class="image-block">
+				<img src="img-bedford-bizarre.jpg">
+				<p>Bedford Bizarre Tea</p>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Locations -->
+
+	<div id="locations" class="locations">
+
+		<h2 id="locations-h2">Locations</h2>
+
+		<div class="locations-divs">
+			<div class="locations-div">
+				<h3>Downtown</h3>
+				<p>384 West 4th St</p>
+				<p>Suite 108</p>
+				<p>Portland, Maine</p>
+			</div>
+			<div class="locations-div">
+				<h3>East Bayside</h3>
+				<p>3433 Phisherman's Avenue</p>
+				<p>(Northwest Corner)</p>
+				<p>Portland, Maine</p>
+			</div>
+			<div class="locations-div">
+				<h3>Oakdale</h3>
+				<p>515 Crescent Avenue</p>
+				<p>Second Floor</p>
+				<p>Portland, Maine</p>
+			</div>
+		</div>
+
+	</div>
+
+
+<!-- Contact -->	
+
+	<div class="contact">
+		<h2>The Tea Cozy</h2>
+		<h5>contact@theteacozy.com</h5>
+		<h5>917-555-8904</h5>			
+	</div>
+
+<!-- Footer (copyright) -->
+
+	<footer>
+		<p>&copy; The Tea Cozy 2019</p>
+	</footer>
+
+</body>
+
+
+</html>
