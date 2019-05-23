@@ -1,13 +1,10 @@
 
-
 const dropDown = () => {
     let dropdownContent = document.getElementById("dropdown-content");
 
-    if (window.innerWidth <= 650) {
-        if (dropdownContent.style.display == "none") {
-            dropdownContent.style.display = "block";
-        } else {
-            dropdownContent.style.display = "none";
-        }
+    if (dropdownContent.style.display == "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
     }
 };
